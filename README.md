@@ -9,6 +9,8 @@ Manjaro Linux常用软件一键安装脚本，仅适用于Manjaro Linux（不适
 
 Manjaro Linux 官网：https://manjaro.org  推荐下载镜像地址：https://mirrors.ustc.edu.cn/   https://mirrors.tuna.tsinghua.edu.cn/
 
+[gitee 地址](https://gitee.com/zhouxuanyi/Manjaro-linux)
+
 （注：安装过程需要全程联网，时间视具体网速而定。）
 
 #### 安装教程 ####
