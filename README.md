@@ -15,11 +15,33 @@ Manjaro Linux 官网：https://manjaro.org  推荐下载镜像地址：https://m
 
 #### 安装教程 ####
 
-1. pacman -S git
-2. git clone https://gitee.com/zhouxuanyi/Manjaro-linux.git
-3. cd Manjaro-linux
-4. chmod 777 install.sh
-5. sudo ./install.sh
+1. `pacman -S git`
+2. `git clone https://gitee.com/zhouxuanyi/Manjaro-linux.git`
+3. `cd Manjaro-linux`
+4. `chmod 777 install.sh`
+5. `sudo ./install.sh`
+
+#### 注意 ####
+
+如果./xxxxxx.sh出现：        
+
+（在zsh显示） zsh: ./xxxxxx.sh: bad interpreter: /bin/bash^M: 没有那个文件或目录
+
+（在bash显示） bash: ./fcitx.sh：/bin/bash^M：解释器错误: 没有那个文件或目录
+
+且用vi或vim打开后在最底行显示：
+
+"xxxxxx.sh"  [dos]  XXL , XXB
+
+那么请用vi或vim打开后，（在命令模式中）输入：  
+
+`:set ff=unix`
+
+然后执行：
+
+`:wq!`
+
+再次执行(./)即可
 
 #### 历史版本 ####
 v0.1 (2021.1.30）
