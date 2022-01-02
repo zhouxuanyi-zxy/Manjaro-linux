@@ -1,6 +1,6 @@
 ## 介绍 ##
 
-1、此目录内的“AUR.sh“现在可以安装AUR中的：deepin-wine5、com.qq.weixin.deepin、visual-studio-code-bin
+1、此目录内的“AUR.sh“现在可以安装AUR中的：deepin-wine5、com.qq.weixin.deepin
 
 2、请使用非root权限使用本脚本。
 

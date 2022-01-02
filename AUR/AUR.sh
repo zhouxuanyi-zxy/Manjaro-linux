@@ -17,6 +17,4 @@ install=${install,,} # tolower
 if [[ $install =~ ^(yes|y| ) ]] || [[ -z $install ]]; then
     yay -S deepin-wine5 #安装微信依赖
     yay -S com.qq.weixin.deepin #安装微信
-    yay -S visual-studio-code-bin ##安装vs code
 fi
-
