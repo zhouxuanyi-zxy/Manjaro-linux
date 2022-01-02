@@ -1,15 +1,15 @@
 # Manjaro Linux常用软件一键安装脚本
 
+[![License](https://img.shields.io/badge/license-MIT-4EB1BA.svg?style=flat-square)](https://gitee.com/zhouxuanyi/Manjaro-linux/blob/master/LICENSE)
+
 #### 介绍 ####
-Manjaro Linux常用软件一键安装脚本，仅适用于Manjaro Linux（不适用于Arch Linux的其他各个分枝）。含有vim、Google Chrome、网易云音乐、Virtual Box、zsh、ohmyzsh、QQ、yay、谷歌拼音（可选）、搜狗输入法（可选）。此脚本适用于刚接触Manjaro的小白。安装时间大约在2-5分钟。ohmyzsh需要确定是否安装，其他都是自动安装。
+Manjaro Linux常用软件一键安装脚本，仅适用于Manjaro Linux（不适用于Arch Linux的其他各个分枝）。含有vim、Google Chrome、网易云音乐、Virtual Box、zsh、ohmyzsh、QQ、yay、谷歌拼音（可选）、搜狗输入法（可选）、微信（可选）、vs code。此脚本适用于刚接触Manjaro的小白。安装时间大约在2-5分钟。ohmyzsh需要确定是否安装，其他都是自动安装。
 
 （安装输入法的详细安装方法请见：“输入法”文件夹中的README.md文件。）
 
 （如果要安装AUR里的软件，详细的安装方法请见：“AUR”文件夹中的README.md文件）
 
 Manjaro Linux 官网：https://manjaro.org  推荐下载镜像地址：https://mirrors.ustc.edu.cn/   https://mirrors.tuna.tsinghua.edu.cn/
-
-[gitee 地址](https://gitee.com/zhouxuanyi/Manjaro-linux)
 
 （注：安装过程需要全程联网，时间视具体网速而定。）
 
@@ -67,3 +67,13 @@ v0.3（2021.2.1）
 2、添加清华源和阿里源进/etc/pacman.conf 。
 
 3、安装AUR管理器：yay ，并添加清华AUR源。
+
+
+v0.38（2021.2.14）
+
+1、修复了一些小bug。
+
+2、可以安装vim、网易云音乐、Google Chrome、zsh、ohmyzsh、Virtual Box、QQ、visual studio code。
+
+
+本项目有缘再更新

@@ -1,12 +1,12 @@
 #!/bin/bash
 ####################################################
-# Manjaro Linux常用软件一键安装脚本                   #
+# Manjaro Linux常用软件一键安装脚本                  #
 # v0.3                                             #                    
 # Author: zhouxuanyi                               #
 # Copyright (c) 2021 zhouxuanyi                    #                                
 # URL: https://gitee.com/zhouxuanyi/Manjaro-linux  #                          
 # License: MIT                                     #
-###################################################
+####################################################
 if [ `whoami` != "root" ];
 then
 echo "请使用root权限执行此脚本！"
@@ -65,6 +65,9 @@ if [[ $install =~ ^(yes|y| ) ]] || [[ -z $install ]]; then
     echo 安装python
     sudo pacman -S --noconfirm python
     clear
+    echo 安装visual studio code
+    sudo pacman -S --noconfirm visual-studio-code-bin ##安装vs code
+    clear
     echo 安装ohmyzsh
     sudo git clone https://github.com/ohmyzsh/ohmyzsh.git
     cd /tmp/Manjaro-linux/ohmyzsh/tools/
@@ -73,6 +76,7 @@ if [[ $install =~ ^(yes|y| ) ]] || [[ -z $install ]]; then
     clear
     echo 正在清理残余文件
     sudo rm -f -r /tmp/Manjaro-linux/
+    clear
     echo 成功安装完成！已安装：vim、网易云音乐、Google Chrome、zsh、Virtual Box、QQ、ohmyzsh、yay。
     exit 1
 fi
