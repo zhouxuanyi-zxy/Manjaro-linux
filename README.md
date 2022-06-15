@@ -44,7 +44,7 @@ Manjaro Linux 官网：https://manjaro.org  推荐下载镜像地址：https://m
 再次执行(./)即可
 
 #### 历史版本 ####
-v0.1 (2021.1.30）
+v0.1 (2021.1.30)
 
 1、可以安装vim、网易云音乐、Google Chrome、zsh、ohmyzsh、Virtual Box、QQ。
 
@@ -60,7 +60,7 @@ v0.2 (2021.1.31)
 3、v0.3将增加清华源和阿里源。
 
 
-v0.3（2021.2.1）
+v0.3 (2021.2.1)
 
 1、修复了/etc/pacman.d/mirrorlist 的bug，并把华为源和中科大源添加进/etc/pacman.d/mirrorlist 。
 
@@ -69,7 +69,7 @@ v0.3（2021.2.1）
 3、安装AUR管理器：yay ，并添加清华AUR源。
 
 
-v0.38（2021.2.14）
+v0.38 (2021.2.14)
 
 1、修复了一些小bug。
 
@@ -77,3 +77,13 @@ v0.38（2021.2.14）
 
 
 本项目有缘再更新
+
+v0.39 (2022.6.15)
+
+1、删除清华AUR源，详见 https://mirrors.tuna.tsinghua.edu.cn/news/remove-aur/
+
+2、ohmyzsh为自动安装
+
+3、本项目主要储存库改为https://github.com/zhouxuanyi-zxy/Manjaro-linux
+
+4、本项目因为作者成功安装Arch Linux而转型适配Arch,取消适配Manjaro,请以实际情况为准
