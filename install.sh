@@ -1,7 +1,7 @@
 #!/bin/bash
 #########################################################
-# Manjaro Linux常用软件一键安装脚本                      #
-# v0.39                                                 #                    
+# Manjaro Linux常用软件一键安装脚本                     #
+# v0.39.1                                               #                    
 # Author: zhouxuanyi                                    #
 # Copyright (c) 2021 zhouxuanyi                         #                                
 # URL: https://github.com/zhouxuanyi-zxy/Manjaro-linux  #                          
@@ -50,17 +50,21 @@ if [[ $install =~ ^(yes|y| ) ]] || [[ -z $install ]]; then
     clear
     cd /tmp/Manjaro-linux
     echo 安装Virtual Box
-    wget https://download.virtualbox.org/virtualbox/6.1.18/VirtualBox-6.1.18-142142-Linux_amd64.run
-    chmod 777 VirtualBox-6.1.18-142142-Linux_amd64.run
-    sudo ./VirtualBox-6.1.18-142142-Linux_amd64.run
+    sudo pacman -S --noconfirm virtualbox
+    #wget https://download.virtualbox.org/virtualbox/6.1.18/VirtualBox-6.1.18-142142-Linux_amd64.run
+    #chmod 777 VirtualBox-6.1.18-142142-Linux_amd64.run
+    #sudo ./VirtualBox-6.1.18-142142-Linux_amd64.run
     clear
-    echo 安装QQ
-    wget http://down.qq.com/qqweb/LinuxQQ/linuxqq_2.0.0-b2-1084_x86_64.pkg.tar.xz
-    sudo pacman -U --noconfirm linuxqq_2.0.0-b2-1084_x86_64.pkg.tar.xz
-    clear
+    #echo 安装QQ
+    #wget http://down.qq.com/qqweb/LinuxQQ/linuxqq_2.0.0-b2-1084_x86_64.pkg.tar.xz
+    #sudo pacman -U --noconfirm linuxqq_2.0.0-b2-1084_x86_64.pkg.tar.xz
+    #clear
     echo 安装Arch Linux AUR管理器
     sudo pacman -S --noconfirm yay
     #yay --aururl "https://aur.tuna.tsinghua.edu.cn" --save
+    clear
+    echo 安装QQ
+    yay -S --noconfirm linuxqq
     clear
     echo 安装python
     sudo pacman -S --noconfirm python
@@ -69,7 +73,8 @@ if [[ $install =~ ^(yes|y| ) ]] || [[ -z $install ]]; then
     sudo pacman -S --noconfirm visual-studio-code-bin ##安装vs code
     clear
     echo 安装ohmyzsh
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+    sudo pacman -S --noconfirm oh-my-zsh-git
+    #sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
     echo 正在清理残余文件
     sudo rm -f -r /tmp/Manjaro-linux/
     clear

@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-4EB1BA.svg?style=flat-square)](https://gitee.com/zhouxuanyi/Manjaro-linux/blob/master/LICENSE)
 
 #### 介绍 ####
-Manjaro Linux常用软件一键安装脚本，仅适用于Manjaro Linux（不适用于Arch Linux的其他各个分枝）。含有vim、Google Chrome、网易云音乐、Virtual Box、zsh、ohmyzsh、QQ、yay、谷歌拼音（可选）、搜狗输入法（可选）、微信（可选）、vs code。此脚本适用于刚接触Manjaro的小白。安装时间大约在2-5分钟。ohmyzsh需要确定是否安装，其他都是自动安装。
+Manjaro Linux常用软件一键安装脚本，仅适用于Manjaro Linux（不适用于Arch Linux的其他各个分枝）。含有vim、Google Chrome、网易云音乐、Virtual Box、zsh、ohmyzsh、QQ、yay、谷歌拼音（可选）、搜狗输入法（可选）、微信（可选）、vs code。此脚本适用于刚接触Manjaro的小白。安装时间大约在2-5分钟。
 
 （安装输入法的详细安装方法请见：“输入法”文件夹中的README.md文件。）
 
@@ -88,4 +88,14 @@ v0.39 (2022.6.15)
 
 [gitee](https://gitee.com/zhouxuanyi/Manjaro-linux)储存库为备选
 
-说老实话，我真觉得这玩意挺鸡肋的
+
+v0.39.1 (2024.2.14)
+
+1、安装来自AUR的linuxqq
+
+2、使用官方源内的virtualbox
+
+3、使用archlinuxcn源内的oh-my-zsh
+
+**此版本未使用Manjaro Linux测试，仅使用了Arch Linux测试**
+
